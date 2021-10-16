@@ -47,6 +47,11 @@ a {
     margin-bottom: 30px;
 }
 
+form {
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
 a:link {color: #df7861;}
 a:visited {color: #ecb390;}
 
