@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Contact</title>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <nav>
+            <a href="index.html">HOME</a> |
+            <a href="skills.html">SKILLS</a> |
+            <a href="contact.html">CONTACT</a>
+        </nav>
+
+        <h1>Contact</h1>
+        <h2>Ziyan Zhou</h2>
+        <p>505 Walnut Ave. <br> Syracuse, NY 13210</p>
+        <a href = "mailto:zzhou27@syr.edu">Ziyan Zhou Email</a> <br>
+        <br>
+        <a href = "https://www.linkedin.com/in/ziyan-zhou-a21396173/"> <img src = "../images/logo_scaled2.png" alt = "LinkedIn Logo"> My LinkdedIn Profile</a> <br>
+        <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2915.756469600322!2d-76.13400308473757!3d43.046555179146765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f3a761bd0b81%3A0x2b9129d843ac90a9!2s505%20Walnut%20Ave%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1631807340487!5m2!1sen!2sus" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        <br><br>
+
+        <form action="mailto:zzhou27@syr.edu" method="POST">
+            <h2>Contact Me</h2>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="fname">
+            <br><br>
+
+            <label for="contactmethod">How would you like to be contacted?</label>
+            <select id="contactmethod" name="contactmethod">
+                <option value="phone">Phone</option>
+                <option value="email">Email</option>
+                <option value="WeChat">WeChat</option>
+            </select>
+            <br><br>
+
+            <label for="guestcontact">Email/Phone/Wechat:</label>
+            <input type="text" id="guestcontact" name="gcontact">
+            <br><br>
+
+            <label for="message">Please leave your message:</label> <br>
+            <textarea id="message" rows="5" cols="50" name="message">Enter your message here. </textarea>
+            <br><br>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color:#fdf0dd;
+            background-image: url("sulogo.png");
+            background-size: 5%;
+            background-repeat: repeat-x;
+            /* many more background propertis at w3schools */
+            /* when sizing always just size width or height (one of them), the other dimension will size automatically */
+        }
+        p {
+            color: #e09f3e;
+            background-color: whitesmoke;
+            border: 2px solid #000000;
+            padding: 15px; /* add space in the inside of the box */
+            margin: 40px;  /* add space outside the box */
+            /* Does not work well on inline element, only on block element */
+        }
+        /* Pseudo classes affect one state of the element */
+        a:link {color: #9e2a2b;}
+        a:visited {color: #335c67;} /* changes link after it's been clicked */
+        a:hover {text-decoration-style: wavy;}
+        .secondlink {color: rgb(255, 154, 66)}
+    </style>
+</head>
+<body>
+    <p> <a href="http://soe.syr.edu">School of Education</a> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+    <p> <a href="http://www.google.com" class="secondlink">Google</a> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+</body>
+</html>
