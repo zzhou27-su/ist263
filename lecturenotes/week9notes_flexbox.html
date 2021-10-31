@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: black;
+            color: white;
+        }
+
+        .row1 {
+            display: flex;
+            padding: 5px;
+            justify-content: flex-end;
+            margin-bottom: 20px;
+        }
+
+        .row1 div {padding: 4px;}
+
+        .row2 {
+            display: flex;
+            padding: 5px;
+            justify-content: space-around;
+        }
+
+        .row3 {
+            display: flex;
+            padding: 5px;
+            justify-content: space-between;
+        }
+
+        .outerflexbox {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+        }
+
+        .navflexbox, .socialflexbox{
+            display: flex;
+        }
+
+        .navflexbox div, .socialflexbox div {
+            padding: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <p>This nav is justified right.</p>
+    <div class="row1">
+        <div>Home</div>
+        <div>About US</div>
+        <div>Product</div>
+        <div>Contact</div>
+    </div>
+
+    <p>This nav has space around.</p>
+    <div class="row2">
+        <div>Home</div>
+        <div>About US</div>
+        <div>Product</div>
+        <div>Contact</div>
+    </div>
+
+    <p>This nav has space between.</p>
+    <div class="row3">
+        <div>Home</div>
+        <div>About US</div>
+        <div>Product</div>
+        <div>Contact</div>
+    </div>
+ 
+    <p>This is our split nav.</p>
+    <div class="outerflexbox">
+        <div>
+            <div class="navflexbox">
+                <div>Home</div>
+                <div>About US</div>
+                <div>Product</div>
+                <div>Contact</div>
+            </div>
+        </div>
+
+        <div>
+            <div class="socialflexbox">
+                <div>Facebook</div>
+                <div>Twitter</div>
+            </div>
+        </div>
+    </div>
+
+    <p>social flexbox that will be put in the 2nd inner flexbox</p>
+    <div class="socialflexbox">
+        <div>Facebook</div>
+        <div>Twitter</div>
+    </div>
+</body>
+</html>
