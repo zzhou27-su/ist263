@@ -5,7 +5,7 @@ h1,h2,h3 {
 }
 
 h1 {
-    color: #506d84;
+    color: #3E5670;
     font-size: 2.15em;
     margin-left: 20px;
 }
@@ -41,7 +41,7 @@ body {
 
 nav {
     font-size: 1.2em;
-    background-color: #faf3dd;
+    background-color: #FDFAF1;
     padding: 10px;
     margin-bottom: 10px;
 }
@@ -72,7 +72,7 @@ form {
     margin-bottom: 30px;
 }
 
-a:link {color: #df7861;}
+a:link {color: #A0280D;}
 a:visited {color: #ecb390;}
 
 
