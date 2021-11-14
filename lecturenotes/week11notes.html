@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessability</title>
+    <style>
+        /* skip to content is 3 things
+        1. html link "skip to content"
+        2. add anchor to the link
+        3. style in css with position absolute and left to make it disappear
+        3b. bring it back by changing left value - focus pseudo class */
+
+        #skip {
+            position: absolute; /* position it relative to parent container */
+            left: -999px; /* move it off the page */
+            background-color: tomato;
+        }
+
+        #skip:focus {
+            left: 10px; /* move our link back on screen when it is tabed */
+        }
+    </style>
+</head>
+<body>
+    <a id="skip" href="#maincontent">Skip to Content</a>
+    <!-- id element is similar to class, but you can only use it once, it has to be unique-->
+    <!-- skip to content is an an hor link - # specifies where we are going on the page -->
+
+    <!-- tabindex says what order elements are in when using tab key to surf -->
+    <a href="inex.html" tabindex="3">Home</a>
+    <a href="about.html" tabindex="2">About</a>
+    <a href="contact.html" tabindex="1">Contact</a>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <!-- the id has to be same as the anchorlink of the skip -->
+    <a id="maincontent"></a> <!-- this is an anchor -->
+    <p>This is where our main page content is. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</body>
+</html>

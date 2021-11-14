@@ -22,6 +22,10 @@ p {
     margin-top: 0px;
 }
 
+.inlinep {
+    display: inline;
+}
+
 .biography {
     margin: 20px;
 }
@@ -90,7 +94,6 @@ footer {
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
-    padding-right: 70px;
 }
 
 .info {
@@ -100,7 +103,6 @@ footer {
 
 .links {
     padding-top: 70px;
-    vertical-align: text-bottom;
 }
 
 .clearfloat {clear: both;}
@@ -168,4 +170,15 @@ footer {
     vertical-align: top;
     display: inline-block;
     text-align: center;
+}
+
+#skip {
+    position: absolute; 
+    left: -999px;
+    text-decoration: none;
+    background-color: whitesmoke;
+}
+
+#skip:focus {
+    left: 350px;
 }
