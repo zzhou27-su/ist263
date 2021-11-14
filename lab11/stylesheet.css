@@ -5,12 +5,12 @@ h1,h2,h3 {
 }
 
 h1 {
-    color: #3E5670;
+    color: #123459;
     font-size: 2.15em;
     margin-left: 20px;
 }
 h2 {
-    color: #889eaf;
+    color: #254B74;
     font-size: 1.25em;
 }
 
@@ -73,7 +73,7 @@ form {
 }
 
 a:link {color: #A0280D;}
-a:visited {color: #ecb390;}
+a:visited {color: #da4f2f;}
 
 
 header {text-align: center;}
