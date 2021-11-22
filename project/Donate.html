@@ -5,25 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="ProjectSylesheet.css">
+
+    <style>
+        main {
+            display: flex;
+        }
+
+        .left {
+            flex: 1;
+            text-align: justify;
+            padding-right: 40px;
+            padding-top: 30px;
+        }
+
+        .left p {
+            margin-bottom: 20px;
+        }
+
+        .image {
+            flex: 1;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .right {
+            flex: 1;
+            text-align: justify;
+            padding-left: 40px;
+            padding-top: 30px;
+        }
+
+        .right p {
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .buttom {
+            display: flex;
+            justify-content: space-around;
+            margin-left: 450px;
+            margin-right: 450px;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        <img src="images/LOGO.png" width="70" alt="Logo">
-        <h3>LOCOROCO VENDING PROJECT</h3>
-    </div>
+    <header>
+        <img src="images/LOGO.png" width="100" alt="Logo">
+        <h2>LOCOROCO VENDING PROJECT</h2>
+    </header>
 
     <nav>
-        <a href="index.html">HOME</a> <span>|</span>
-        <a href="AboutUs.html">ABOUT US</a> <span>|</span>
-        <a href="LocoRocoVendingProject.html">PROJECT</a> <span>|</span>
-        <a href="Contact.html">CONTACT</a> <span>|</span>
+        <a href="index.html">HOME</a> 
+        <a href="AboutUs.html">ABOUT US</a> 
+        <a href="LocoRocoVendingProject.html">PROJECT</a> 
+        <a href="Contact.html">CONTACT</a> 
         <a href="Donate.html">DONATE</a>
     </nav>
 
     <h1>Donate</h1>
 
-    <div>
-        <div>
+    <main>
+        <div class="left">
             <p>
                 Street vendors in all cities are facing many difficulties daily. Fear and stress from various aspects are taking over and tearing them apart. If you are a street vendor or consumer of street vending, and would like to participate in the project, please share your experience and leave your contact method below for more information about the project. Your message and experience would be shared on our website and Instagram page to the whole community. 
             </p>
@@ -33,11 +80,11 @@
             </p>
         </div>
 
-        <div>
-            <img src="images/Body.jpg" width="600" alt="Fear and Stress of Street Vendors">
+        <div class="image">
+            <img src="images/Body.jpg" width="400" alt="Fear and Stress of Street Vendors">
         </div>
 
-        <div>
+        <div class="right">
             <p>
                 If you would like to support us as a guest or consumer of street vendors, please click on "DONATE AS A GUEST" bottom. Donation could be anonymous. 
             </p>
@@ -50,13 +97,11 @@
                 <strong>YOUR SUPPORT WOULD BE APPRECIATED GREATLY. THANK YOU SO MUCH!</strong>
             </p>
         </div>
-    </div>
+    </main>
 
-    <div>
-        <h3>WE WELCOME YOUR DONATION</h3>
-    </div>
+    <h3>WE WELCOME YOUR DONATION</h3>
 
-    <div>
+    <div class="buttom">
         <div>
             <button type="button">CONTRIBUTE AS A GUEST</button>
         </div>

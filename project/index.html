@@ -5,104 +5,238 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="ProjectSylesheet.css">
+
+    <style>
+        header {
+            margin: 0px;
+            padding: 0px;
+            display: block;
+            background-image:url(images/header2ver2.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            max-width: 100%;
+            height: 700px;
+        }
+
+        .smallheader {
+            display: flex;
+            align-items: center;
+            margin-left: 40px;
+            margin-top: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        nav {
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        h1 {
+            font-size: 1.5em;
+            margin: 0px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        main, .firstrow, .secondrow, .iconfirstrow, .iconsecondrow {
+            display: flex;
+        }
+
+        .description {
+            flex-basis: 30%;
+            margin-right: 30px;
+            padding: 30px;
+            color: white;
+            background-color: #0e0c0c;
+            border-radius: 1.25em;
+            position: relative;
+            top: -130px;
+        }
+
+        .descriptiontext {
+            text-align: justify;
+            padding: 10px;
+            padding-top: 40px;
+            font-size: 0.95em;
+        }
+
+        .shortsections {
+            flex-basis: 70%;
+            margin-left: 20px;
+            margin-top: 80px;
+        }
+
+        .firstrow div, .secondrow div {
+            flex: 1;
+            padding: 20px;
+            margin-left: 25px;
+            margin-right: 25px;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+            text-align: center;
+            border: 1px solid;
+            border-radius: 1em;
+        }
+
+        .icon {
+            display: inline;
+            flex: 1;
+            text-align: center;
+            padding-left: 19px;
+            padding-right: 19px;
+            margin-top: 5px;
+            margin-left: 25px;
+            margin-right: 25px;
+            margin-bottom: 10px;
+        }
+
+        .icon a {
+            font-size: 0.88em;
+        }
+        
+        .handbookdisplay {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 0px;
+            margin-left: 150px;
+            margin-right: 150px;
+            margin-bottom: 60px;
+        }
+
+        .handbooklink {
+            display: block;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    </style>
 </head>
+
 <body>
-    <div>
-        <img src="images/LOGO.png" width="70" alt="Logo">
-        <h3>LOCOROCO VENDING PROJECT</h3>
+    <header>
+        <div class="smallheader">
+            <img src="images/LOGO.png" width="100" alt="Logo">
+            <h2>LOCOROCO <br> VENDING <br> PROJECT</h2>
+        </div>
+    
+        <nav>
+            <a href="index.html">HOME</a> 
+            <a href="AboutUs.html">ABOUT US</a> 
+            <a href="LocoRocoVendingProject.html">PROJECT</a> 
+            <a href="Contact.html">CONTACT</a> 
+            <a href="Donate.html">DONATE</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="description">
+
+            <h1>LocoRoco Vending Project</h1>
+
+            <div class="descriptiontext">
+                <p>
+                Street vending has been an important part of cities and their economy for a long time all around the world. It not only provides working opportunities for vendors but also increases merchant selection for consumers. However, the impression of street vendors is not always positive, some people view them as disruptors of city order because of their uncleanness and mobility. Vendors are facing various difficulties and pressures from society and City authorities. Many of them are immigrants who cannot speak English fluently while their whole family is depending on this low-income business on the street. Robbery, harassment, and police enforcement are also common for street vendors. In New York City, the process of becoming a vendor consumes highly on time and money.
+                </p>
+
+                <p>
+                There are many difficulties that street vendors are facing, especially during the pandemic of COVID-19. License, high cost, low income, strict regulation, and police enforcement have already been stressing vendors out, with the pandemic and the widespread of delivery service, street vendors are losing consumers and the source to support their families.
+                </p>
+
+                <p>
+                The LocoRoco vending project was inspired by the video game Loco Roco, which small dots gather to become bigger dots to defeat enemies, and break into small individual dots when necessary. The project aims to help vendors achieve solidarity by setting up a platform for individuals to help each other by exchanging opinions, providing delivery service, and sharing resources.
+                </p>
+
+                <p>
+                The project develops two major parts, a physical kit, and a virtual platform for community. The physical kit consists of portable WIFI service and operable panels for vendor's meeting space construction. This kit aims to create internal connections among vendors by allowing them to assemble meetings and form spaces together whenever is needed. The mobile app features in vendor mapping and delivery service for vendors and consumers, and a platform for vendors and restaurant owners to cooperate.
+                </p>
+            </div>
+        </div>
+
+        <section class="shortsections">
+            <div class="firstrow">
+                <div>
+                    Solidarity among the street vendors within a certain area could improve the sense of community and security. 
+                </div>
+
+                <div>
+                    Street Vendor Project is an existing none-profit organization in NYC that represents vendors and helps them negotiate with authorities.     
+                </div>
+
+                <div>
+                    The LocoRoco Vending Project aims to create solidarity among street vendors by connecting them internally and externally via a physical kit and a mobile app. 
+                    <br>
+                    
+                </div>
+            </div>
+
+            <div class="iconfirstrow">
+                <div class="icon">
+                    <img src="icon/solidarity.png" alt="Solidarity Icon" height="40"> <br>
+                    SOLIDARITY
+                </div>
+
+                <div class="icon">
+                    <a href="http://streetvendor.org/"> <img src="icon/equipment.png" alt="SVP Icon" height="40"> <br> STREET VENDOR PROJECT</a>
+                </div>
+
+                <div class="icon">
+                    <a href="AboutUs.html"> <img src="icon/mission.png" alt="Mission Icon" height="40"> <br> OUR MISSION</a> <br>
+                </div>
+            </div>
+
+            <div class="secondrow">
+                <div>
+                    Check out and download the handbook that shows detail process of forming the community and maintaining the project. 
+                </div>
+
+                <div>
+                    Vendors, consumers, designers, restaurant owners, are all welcome to participate in the project and help create a mutual aid network for street vendors. Lease your thoughts to us and the community!
+                </div>
+
+                <div>
+                    Make a donation to help the street vendors with their equipment and the difficulties they are facing. 
+                </div>
+            </div>
+
+            <div class="iconsecondrow">
+                <div class="icon">
+                    <a href="LocoRocoVendingProject.html"> <img src="icon/project.png" alt="Project Icon" height="40"> <br> PROJECT</a>
+                </div>
+
+                <div class="icon">
+                    <a href="Contact.html"> <img src="icon/community.png" alt="Community Icon" height="40"> <br> COMMUNITY</a>
+                </div>
+                    
+                <div class="icon">
+                    <a href="Donate.html"> <img src="icon/donate.png" alt="Donate Icon" height="40"> <br> DONATE</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="handbookdisplay">
+        <div>
+            <img src="images/7.JPG" height="150" alt="Page Example 1">
+        </div>
+
+        <div>
+            <img src="images/2.JPG" height="150" alt="Page Example 2">
+        </div>
+
+        <div>
+            <img src="images/3.JPG" height="150" alt="Page Example 3">
+        </div>
+
+        <div>
+            <img src="images/5.JPG" height="150" alt="Page Example 4">
+        </div>
     </div>
 
-    <nav>
-        <a href="index.html">HOME</a> <span>|</span>
-        <a href="AboutUs.html">ABOUT US</a> <span>|</span>
-        <a href="LocoRocoVendingProject.html">PROJECT</a> <span>|</span>
-        <a href="Contact.html">CONTACT</a> <span>|</span>
-        <a href="Donate.html">DONATE</a>
-    </nav>
+    <a class="handbooklink" href="https://dcfd6443-8984-40d6-8a6b-e2b32f1ffcfd.filesusr.com/ugd/1ea71e_6fb6d8ef5fe34f858571c14a225f97cc.pdf"> <button type="button">DOWNLOAD HANDBOOK</button></a>
 
-    <div>
-        <img src="images/vacations-architecture-buildings-old-town-thumbnail.jpg" alt="Street Vendors">
-    </div>
-
-    <h2>LocoRoco Vending Project</h2>
-
-    <div>
-        <p>
-        Street vending has been an important part of cities and their economy for a long time all around the world. It not only provides working opportunities for vendors but also increases merchant selection for consumers. However, the impression of street vendors is not always positive, some people view them as disruptors of city order because of their uncleanness and mobility. Vendors are facing various difficulties and pressures from society and City authorities. Many of them are immigrants who cannot speak English fluently while their whole family is depending on this low-income business on the street. Robbery, harassment, and police enforcement are also common for street vendors. In New York City, the process of becoming a vendor consumes highly on time and money.
-        </p>
-
-        <p>
-        There are many difficulties that street vendors are facing, especially during the pandemic of COVID-19. License, high cost, low income, strict regulation, and police enforcement have already been stressing vendors out, with the pandemic and the widespread of delivery service, street vendors are losing consumers and the source to support their families.
-        </p>
-
-        <p>
-        The LocoRoco vending project was inspired by the video game Loco Roco, which small dots gather to become bigger dots to defeat enemies, and break into small individual dots when necessary. The project aims to help vendors achieve solidarity by setting up a platform for individuals to help each other by exchanging opinions, providing delivery service, and sharing resources.
-        </p>
-
-        <p>
-        The project develops two major parts, a physical kit, and a virtual platform for community. The physical kit consists of portable WIFI service and operable panels for vendor's meeting space construction. This kit aims to create internal connections among vendors by allowing them to assemble meetings and form spaces together whenever is needed. The mobile app features in vendor mapping and delivery service for vendors and consumers, and a platform for vendors and restaurant owners to cooperate.
-        </p>
-    </div>
-
-    <div>
-        <div>
-            Solidarity among the street vendors within a certain area could improve the sense of community and security. 
-            <br>
-            Solidarity
-        </div>
-
-        <div>
-            Street Vendor Project is an existing none-profit organization in NYC that represents vendors and helps them negotiate with authorities.  
-            <br>
-            <a href="http://streetvendor.org/">Street Vendor Project</a>
-        </div>
-
-        <div>
-            The LocoRoco Vending Project aims to create solidarity among street vendors by connecting them internally and externally via a physical kit and a mobile app. 
-            <br>
-            <a href="AboutUs.html">Our Mission</a>
-        </div>
-
-        <div>
-            Check out and download the handbook that shows detail process of forming the community and maintaining the project. 
-            <br>
-            <a href="LocoRocoVendingProject.html">Project</a>
-        </div>
-
-        <div>
-            Vendors, restaurant owners, consumers, designers are all welcome to participate in the project and help create a mutual aid network for street vendors. Lease your thoughts to us and the community!
-            <br>
-            <a href="Contact.html">Community</a>
-        </div>
-
-        <div>
-            Make a donation to help the street vendors with their equipment and the difficulties they are facing. 
-            <br>
-            <a href="Donate.html">Donate</a>
-        </div>
-    </div>
-
-    <div>
-        <div>
-            <img src="images/7.JPG" width="300" alt="Page Example 1">
-        </div>
-
-        <div>
-            <img src="images/2.JPG" width="300" alt="Page Example 2">
-        </div>
-
-        <div>
-            <img src="images/3.JPG" width="300" alt="Page Example 3">
-        </div>
-
-        <div>
-            <img src="images/5.JPG" width="300" alt="Page Example 4">
-        </div>
-
-        <div>
-            <a href="https://dcfd6443-8984-40d6-8a6b-e2b32f1ffcfd.filesusr.com/ugd/1ea71e_6fb6d8ef5fe34f858571c14a225f97cc.pdf">DOWNLOAD HANDBOOK</a>
-        </div>
-    </div>
+    <footer>
+        &#169;vendorpower2021
+    </footer>
 
 </body>
 

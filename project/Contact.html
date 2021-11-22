@@ -5,34 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="ProjectSylesheet.css">
+
+    <style>
+        main {
+            display: flex;
+        }
+
+        .information {
+            flex-basis: 40%;
+            margin-top: 40px;
+            margin-left: 30px;
+            display: block;
+        }
+
+        .form {
+            margin-right: 30px;
+            flex-basis: 60%;
+            border: 1px ridge;
+            border-radius: 1em;
+            padding: 30px;
+        }
+    </style>
 </head>
+
 <body>
-    <div>
-        <img src="images/LOGO.png" width="70" alt="Logo">
-        <h3>LOCOROCO VENDING PROJECT</h3>
-    </div>
+    <header>
+        <img src="images/LOGO.png" width="100" alt="Logo">
+        <h2>LOCOROCO <br> VENDING <br> PROJECT</h2>
+    </header>
 
     <nav>
-        <a href="index.html">HOME</a> <span>|</span>
-        <a href="AboutUs.html">ABOUT US</a> <span>|</span>
-        <a href="LocoRocoVendingProject.html">PROJECT</a> <span>|</span>
-        <a href="Contact.html">CONTACT</a> <span>|</span>
+        <a href="index.html">HOME</a> 
+        <a href="AboutUs.html">ABOUT US</a> 
+        <a href="LocoRocoVendingProject.html">PROJECT</a> 
+        <a href="Contact.html">CONTACT</a> 
         <a href="Donate.html">DONATE</a>
     </nav>
 
     <h1>Contact</h1>
   
-    <div>
-        <div>
-            Phone: +1 888-888-8888 <br>
-            E-mail: locoroco@streetvending.com <br>
+    <main>
+        <div class="information">
+            <strong>Phone</strong>: +1 888-888-8888 <br>
+            <strong>E-mail</strong>: locoroco@streetvending.com <br>
 
-            Address: <br>
-            Syracuse University School of Architecture
-            <br><br>
+            <strong>Address</strong>: Syracuse University School of Architecture
         </div>
 
-        <div>
+        <div class="form">
             <form action="locoroco@streetvending.com" method="POST">
                 <label for="name">NAME</label>
                 <input type="text" id="name" name="fname">
@@ -61,7 +82,7 @@
                 <input type="submit" value="Send">
             </form>
         </div>
-    </div>
+    </main>
     
 
 </body>
