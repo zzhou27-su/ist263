@@ -15,14 +15,14 @@
             background-image:url(images/header2ver2.jpg);
             background-position: center;
             background-repeat: no-repeat;
-            max-width: 100%;
+            background-size: auto;
             height: 700px;
         }
 
         .smallheader {
             display: flex;
             align-items: center;
-            margin-left: 40px;
+            margin-left: 50px;
             margin-top: 10px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
@@ -44,7 +44,7 @@
 
         .description {
             flex-basis: 30%;
-            margin-right: 30px;
+            margin-right: 20px;
             padding: 30px;
             color: white;
             background-color: #0e0c0c;
@@ -91,6 +91,10 @@
             margin-bottom: 10px;
         }
 
+        .hide {
+            display: none;
+        }
+
         .icon a {
             font-size: 0.88em;
         }
@@ -109,13 +113,119 @@
             text-align: center;
             margin-bottom: 40px;
         }
+
+        @media only screen and (max-width: 1320px) {
+            main {
+                margin: 0px;
+            }
+        }
+
+        @media only screen and (max-width: 1025px) {
+            header{
+                height: 500px;
+            }
+
+            main {
+                margin: 0px;
+            }
+
+            .shortsections div {
+                display: block;
+            }
+
+            .iconfirstrow div {
+                display: none;
+            }
+
+            .iconsecondrow div {
+                display: none;
+            }
+
+            .description {
+                flex-basis: 50%;
+                top: -100px;
+            }
+
+            .shortsections {
+                flex-basis: 50%;
+                margin-top: 0px;
+                margin-left: 5px;
+            }
+
+            .firstrow div, .secondrow div {
+                margin-top: 15px;
+                padding: 10px;
+            }
+
+            .hide {
+                display: inline;
+            }
+
+            .handbookdisplay {
+                margin: 0px;
+            }
+
+            .hideimage1 {
+                display: none;
+            }
+        }
+
+        @media only screen and (max-width: 755px) {
+            header {
+                background-size: 750px;
+                height: 400px;
+            }
+
+            .smallheader, .logo {
+                display: none;
+            }
+
+            h2 {
+                margin-left: 0px;
+            }
+
+            h2 br{
+               display: none; 
+            }
+
+            nav {
+                margin: 0px;
+                font-size: 0.8em;
+            }
+
+            main {
+                margin-left: 15px;
+                margin-right: 15px;
+                display: block;
+            }
+
+            .description {
+                top: -70px;
+                margin: 0px;
+            }
+
+            .shortsections div {
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-bottom: 20px;
+            }
+
+            .handbookdisplay {
+                margin: 25px;
+            }
+
+            .hideimage2 {
+                display: none;
+            }
+        }
+
     </style>
 </head>
 
 <body>
     <header>
         <div class="smallheader">
-            <img src="images/LOGO.png" width="100" alt="Logo">
+            <img class="logo" src="images/LOGO.png" width="90" alt="Logo">
             <h2>LOCOROCO <br> VENDING <br> PROJECT</h2>
         </div>
     
@@ -155,14 +265,17 @@
         <div class="shortsections">
             <div class="firstrow">
                 <div>
-                    Solidarity among the street vendors within a certain area could improve the sense of community and security. 
+                    <p class="hide"><strong>SOLIDARITY</strong><br></p> 
+                    Solidarity among the street vendors within a certain area could improve the sense of community and security.
                 </div>
 
                 <div>
+                    <a class="hide" href="http://streetvendor.org/"><strong>STREET VENDOR PROJECT</strong><br></a> 
                     Street Vendor Project is an existing none-profit organization in NYC that represents vendors and helps them negotiate with authorities.     
                 </div>
 
                 <div>
+                    <a class="hide" href="AboutUs.html"> <strong>OUR MISSION</strong><br></a>
                     The LocoRoco Vending Project aims to create solidarity among street vendors by connecting them internally and externally via a physical kit and a mobile app. 
                     <br>
                     
@@ -186,14 +299,17 @@
 
             <div class="secondrow">
                 <div>
+                    <a class="hide" href="LocoRocoVendingProject.html"> <strong>PROJECT</strong><br></a>
                     Check out and download the handbook that shows detail process of forming the community and maintaining the project. 
                 </div>
 
                 <div>
+                    <a class="hide" href="Contact.html"><strong>COMMUNITY</strong><br></a>
                     Vendors, consumers, designers, restaurant owners, are all welcome to participate in the project and help create a mutual aid network for street vendors. Lease your thoughts to us and the community!
                 </div>
 
                 <div>
+                    <a class="hide" href="Donate.html"> <strong>DONATE</strong><br></a>
                     Make a donation to help the street vendors with their equipment and the difficulties they are facing. 
                 </div>
             </div>
@@ -215,11 +331,11 @@
     </main>
 
     <div class="handbookdisplay">
-        <div>
+        <div class="hideimage2">
             <img src="images/7.JPG" height="150" alt="Page Example 1">
         </div>
 
-        <div>
+        <div class="hideimage1">
             <img src="images/2.JPG" height="150" alt="Page Example 2">
         </div>
 
@@ -239,5 +355,4 @@
     </footer>
 
 </body>
-
 </html>

@@ -19,14 +19,14 @@ h3 {
 header {
     display: flex;
     align-items: center;
-    margin-left: 40px;
+    margin-left: 50px;
     margin-top:10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 nav {
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 120px;
+    margin-right: 120px;
     padding: 10px;
     display: flex;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -51,9 +51,9 @@ nav a {
 main {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 0.85em;
-    margin-left: 150px;
-    margin-right: 150px;
-    padding: 30px; 
+    margin-left: 120px;
+    margin-right: 120px;
+    padding: 20px; 
 }
 
 a {
@@ -63,5 +63,6 @@ a {
 
 footer {
     padding: 20px;
-    background-color: rgba(255, 255, 89, 0.2);
+    background-color: black;
+    color: white;
 }
