@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question</title>
+    <script>
+        function rightAnswer () {
+            document.getElementById("correctanswer").innerHTML = "False is correct!";
+        }
+
+        function wrongAnswer () {
+            document.getElementById("wronganswer").innerHTML = "True is incorrect.";
+        }
+    </script>
+</head>
+<body>
+    <p>Java and JavaScript are the same thing.</p>
+    <p id="wronganswer" onclick="wrongAnswer();">True</p>
+    <p id="correctanswer" onclick="rightAnswer();">False</p>
+</body>
+</html>
