@@ -52,6 +52,17 @@
             margin-right: 450px;
         }
     </style>
+
+    <script>
+        function TurnNavOnOff () {
+            if(document.getElementById("navlinks").style.getPropertyValue("display")=='block') {
+                document.getElementById("navlinks").style.display = "none";
+            }
+            else {
+                document.getElementById("navlinks").style.display = "block";
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -59,7 +70,9 @@
         <h2>LOCOROCO VENDING PROJECT</h2>
     </header>
 
-    <nav>
+    <img src="icon/nav.png" alt="nav icon" id="navicon" onclick="TurnNavOnOff();">
+
+    <nav id="navlinks">
         <a href="index.html">HOME</a> 
         <a href="AboutUs.html">ABOUT US</a> 
         <a href="LocoRocoVendingProject.html">PROJECT</a> 

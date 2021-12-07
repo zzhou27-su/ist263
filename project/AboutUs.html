@@ -30,7 +30,85 @@
         strong {
             background-color: yellow;
         }
+
+        @media only screen and (max-width: 1320px) {
+            main {margin: 5px;}
+            .text div {margin-bottom: 80px;}
+        }
+
+        @media only screen and (max-width: 1125px) {
+            .text div {
+                margin-bottom: 30px;
+                margin-top: 10px;
+            }
+        }
+
+        @media only screen and (max-width: 1025px) {
+            .firstpart, .secondpart {
+                display: block;
+            }
+
+            .video {
+                text-align: center;
+            }
+
+            .text {
+                margin-left: 70px;
+                margin-right: 70px;
+                padding-left: 60px;
+                padding-right: 60px;
+            }
+        }
+
+        @media only screen and (max-width: 850px) {
+            .text {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+
+        @media only screen and (max-width: 700px) {
+            .text {
+                margin-left: 5px;
+                margin-right: 5px;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+
+        @media only screen and (max-width: 415px) {
+            #navicon {
+                display: block;
+                position: relative;
+                top: 10px;
+                right: 10px;
+                float:right;
+            }
+
+            nav a {
+                display: block;
+                padding: 5px;
+                }
+
+            #navlinks {
+                display: none;
+                text-align: center;
+            }
+
+            
+        }
     </style>
+
+<script>
+    function TurnNavOnOff () {
+           if(document.getElementById("navlinks").style.getPropertyValue("display")=='block') {
+               document.getElementById("navlinks").style.display = "none";
+           }
+           else {
+               document.getElementById("navlinks").style.display = "block";
+           }
+       }
+</script>
 </head>
 <body>
     <header>
@@ -38,7 +116,9 @@
         <h2>LOCOROCO <br> VENDING <br> PROJECT</h2>
     </header>
 
-    <nav>
+    <img src="icon/nav.png" alt="nav icon" id="navicon" onclick="TurnNavOnOff();">
+
+    <nav id="navlinks">
         <a href="index.html">HOME</a> 
         <a href="AboutUs.html">ABOUT US</a> 
         <a href="LocoRocoVendingProject.html">PROJECT</a> 
@@ -50,7 +130,7 @@
 
     <main>
         <div class="firstpart">
-            <div>
+            <div class="video">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/m6mnHINfRZU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                 </iframe>
                 
@@ -71,7 +151,7 @@
         </div>
 
         <div class="secondpart">
-            <div>
+            <div class="video">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/HjDcMY8S4C8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                 </iframe>
 

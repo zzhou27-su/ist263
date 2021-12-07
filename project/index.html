@@ -16,7 +16,7 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: auto;
-            height: 700px;
+            height: 800px;
         }
 
         .smallheader {
@@ -50,7 +50,7 @@
             background-color: #0e0c0c;
             border-radius: 1.25em;
             position: relative;
-            top: -130px;
+            top: -180px;
         }
 
         .descriptiontext {
@@ -172,11 +172,11 @@
 
         @media only screen and (max-width: 755px) {
             header {
-                background-size: 750px;
-                height: 400px;
+                background-size: 740px;
+                height: 350px;
             }
 
-            .smallheader, .logo {
+            .smallheader {
                 display: none;
             }
 
@@ -186,11 +186,6 @@
 
             h2 br{
                display: none; 
-            }
-
-            nav {
-                margin: 0px;
-                font-size: 0.8em;
             }
 
             main {
@@ -214,12 +209,52 @@
                 margin: 25px;
             }
 
+            .displaysmall img{
+                height: 130px;
+            }
+
             .hideimage2 {
                 display: none;
             }
         }
 
+        @media only screen and (max-width: 415px) {
+            header {
+                background-size: 415px;
+                height: 250px;
+            }
+
+            .description {
+                padding: 10px;
+            }
+
+            .shortsections div {
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+            }
+
+            .handbookdisplay {
+                margin: 5px;
+            }
+
+            .displaysmall img{
+                height: 100px;
+            }
+        }
+
     </style>
+
+    <script>
+         function TurnNavOnOff () {
+                if(document.getElementById("navlinks").style.getPropertyValue("display")=='block') {
+                    document.getElementById("navlinks").style.display = "none";
+                }
+                else {
+                    document.getElementById("navlinks").style.display = "block";
+                }
+            }
+    </script>
 </head>
 
 <body>
@@ -228,8 +263,10 @@
             <img class="logo" src="images/LOGO.png" width="90" alt="Logo">
             <h2>LOCOROCO <br> VENDING <br> PROJECT</h2>
         </div>
+
+        <img src="icon/nav.png" alt="nav icon" id="navicon" onclick="TurnNavOnOff();">
     
-        <nav>
+        <nav id="navlinks">
             <a href="index.html">HOME</a> 
             <a href="AboutUs.html">ABOUT US</a> 
             <a href="LocoRocoVendingProject.html">PROJECT</a> 
@@ -339,11 +376,11 @@
             <img src="images/2.JPG" height="150" alt="Page Example 2">
         </div>
 
-        <div>
+        <div class="displaysmall">
             <img src="images/3.JPG" height="150" alt="Page Example 3">
         </div>
 
-        <div>
+        <div class="displaysmall">
             <img src="images/5.JPG" height="150" alt="Page Example 4">
         </div>
     </div>
