@@ -130,6 +130,22 @@
             h1 {
                 margin-left: 20px;
             }
+
+            .buttom {
+            margin-left: 20px;
+            margin-right: 20px; 
+            }
+        }
+
+        @media only screen and (max-width: 415px) {
+            .buttom {
+                display: block;
+                text-align: center;
+            }
+
+            .guest, .member {
+                margin-top: 20px;
+            }
         }
     </style>
 
@@ -195,13 +211,17 @@
     <h3>WE WELCOME YOUR DONATION</h3>
 
     <div class="buttom">
-        <div>
+        <div class="guest">
             <button type="button">CONTRIBUTE AS A GUEST</button>
         </div>
 
-        <div>
+        <div class="member">
             <button type="button">CONTRIBUTE AS A MEMBER</button>
         </div>
     </div>
+
+    <footer>
+        &#169;vendorpower2021
+    </footer>
 </body>
 </html>

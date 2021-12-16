@@ -25,6 +25,7 @@
 
         .form {
             margin-right: 30px;
+            margin-bottom: 100px;
             flex-basis: 60%;
             border: 1px ridge;
             border-radius: 1em;
@@ -97,6 +98,10 @@
                 margin-left: 20px;
             }
         }
+
+        @media only screen and (max-width: 415px) {
+            form {width: 100px;}
+        }
     </style>
 
     <script>
@@ -168,7 +173,7 @@
                 <br><br>
 
                 <label for="message">YOUR MESSAGE</label> <br>
-                <textarea id="message" rows="6" cols="50" name="message">Send your message to us or share your story and experience to the community.</textarea>
+                <textarea id="message" rows="6" cols="35" name="message">Send your message to us or share your story and experience to the community.</textarea>
                 <br>
                 
                 <button type="button" onclick="openModal();">Send</button>
@@ -181,6 +186,8 @@
         </div>
     </main>
     
-
+    <footer>
+        &#169;vendorpower2021
+    </footer>
 </body>
 </html>
