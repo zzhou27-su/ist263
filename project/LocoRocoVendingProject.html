@@ -26,7 +26,6 @@
         }
 
         .descriptiveimage {
-            border: 1px dashed rgb(248, 242, 44, 0.4);
             margin-bottom: 20px;
             display: flex;
             align-items: center;
@@ -72,13 +71,109 @@
 
         @media only screen and (max-width: 1050px) {
             .phase{padding: 10px;}
+
             .down{margin: 5px;}
+
             .descriptiveimage {
-                width: 250px;
+                width: 100%;
+                height: 100%;
+            }
+
+            .image, .image2 {
+                width: 90%;
+                height: 90%;
             }
         }
 
+        @media only screen and (max-width: 950px) {
+            .phase {padding: 0px;}
 
+            .first {
+                left: 30px;
+                text-align: center;
+            }
+
+            .second {
+                right: 30px;
+                text-align: center;
+            }
+
+            .image2 {
+                margin-top: 130px;
+            }
+
+        }
+
+        @media only screen and (max-width: 755px) {
+            .descriptiveimage {
+                width: 80%;
+            }
+            
+            .image2 {
+                margin-top: 150px;
+            }
+
+            h1, .handbook {
+                margin-left: 20px;
+            }
+        }
+
+        @media only screen and (max-width: 720px) {
+            .descriptiveimage {
+                margin-top: 10px;
+            } 
+        }
+
+        @media only screen and (max-width: 680px) {
+            .descriptiveimage {
+                margin-top: 30px;
+            } 
+        }
+
+        @media only screen and (max-width: 650px) {
+            .descriptiveimage {
+                width: 70%;
+            }
+        }
+
+        @media only screen and (max-width: 630px) {
+            .descriptiveimage {
+                display: none;
+            }
+
+            main {
+                background-color: #ffffff;
+            }
+
+            .phase {
+                margin-left: 25px;
+                margin-right: 25px;
+            }
+            
+            .row1 {
+                margin-top: 25px;
+            }
+
+            .row5 {
+                margin-bottom: 25px;
+            }
+
+            .first {
+                left: 0px;
+                background-color:  rgba(255, 255, 89, 0.5);
+            }
+
+            .second {
+                right: 0px;
+                background-color:  rgba(255, 255, 89, 0.5);
+            }
+        }
+
+        @media only screen and (max-width: 415px) {
+            .row1 {
+                margin-top: 0px;
+            }
+        }
     </style>
 
     <script>
@@ -109,15 +204,17 @@
         <a href="Donate.html">DONATE</a>
     </nav>
 
-    <h1>LocoRoco Vending Project</h1>
+    <h1>Project Overview</h1>
 
     <a class="handbook" href="https://dcfd6443-8984-40d6-8a6b-e2b32f1ffcfd.filesusr.com/ugd/1ea71e_6fb6d8ef5fe34f858571c14a225f97cc.pdf"> <button type="button">DOWNLOAD HANDBOOK</button></a>
 
     <main>
         <div class="row1">
+            
             <div class="descriptiveimage">
-                <img src="images/phase1.JPG" width="310" height="300" alt="Phase 1"> 
+                <img src="images/phase1.JPG" width="310" height="300" alt="Phase 1" class="image"> 
             </div>
+            
 
             <div class="phase">
                 <div class="first">
@@ -140,13 +237,13 @@
             </div>  
 
             <div class="descriptiveimage">
-                <img src="images/phase2.JPG" width="310" height="300" alt="Phase 2">
+                <img src="images/phase2.JPG" width="310" height="300" alt="Phase 2" class="image2">
             </div>
         </div>
 
         <div class="row2">
             <div class="descriptiveimage">
-                <img src="images/phase3.JPG" width="310" height="270" alt="Phase 3">
+                <img src="images/phase3.JPG" width="310" height="260" alt="Phase 3" class="image">
             </div>
 
             <div class="phase">
@@ -170,13 +267,13 @@
             </div>
 
             <div class="descriptiveimage">
-                <img src="images/phase4.JPG" width="310" height="270" alt="Phase 4">
+                <img src="images/phase4.JPG" width="310" height="260" alt="Phase 4" class="image2">
             </div>
         </div>
 
         <div class="row3">
             <div class="descriptiveimage">
-                <img src="images/phase5.JPG" width="310" height="300" alt="Phase 5">
+                <img src="images/phase5.JPG" width="310" height="300" alt="Phase 5" class="image">
             </div>
 
             <div class="phase">
@@ -200,13 +297,13 @@
             </div>
 
             <div class="descriptiveimage">
-                <img src="images/phase6.JPG" width="310" height="300" alt="Phase 6">
+                <img src="images/phase6.JPG" width="310" height="300" alt="Phase 6" class="image2">
             </div>
         </div>
 
         <div class="row4">
             <div class="descriptiveimage">
-                <img src="images/phase7.JPG" width="310" height="300" alt="Phase 7">
+                <img src="images/phase7.JPG" width="310" height="300" alt="Phase 7" class="image">
             </div>
 
             <div class="phase">
@@ -230,19 +327,19 @@
             </div>
 
             <div class="descriptiveimage">
-                <img src="images/phase8.JPG" width="310" height="300" alt="Phase 8">
+                <img src="images/phase8.JPG" width="310" height="300" alt="Phase 8" class="image2">
             </div>
         </div>
 
         <div class="row5">
             <div class="descriptiveimage">
-                <img src="images/phase9.JPG" width="310" height="300" alt="Phase 9">
+                <img src="images/phase9.JPG" width="310" height="300" alt="Phase 9" class="image">
             </div>
 
             <div class="phase">
                 <div class="first">
                     <strong>PHASE 9: PRACTICE IN OTHER CITIES</strong> <br>
-                    This phase vendors would start applying the project in other cities to fulfill a more widespread use.
+                    This phase vendors would start applying the project in other cities to fulfill a more widespread use, and form a coonective network.
                 </div>
 
                 <div class="down">
@@ -256,7 +353,7 @@
             </div>
 
             <div class="descriptiveimage">
-                <img src="images/phase10.JPG" width="310" height="300" alt="Phase 10">
+                <img src="images/phase10.JPG" width="310" height="300" alt="Phase 10" class="image2">
             </div>
         </div>
     </main>

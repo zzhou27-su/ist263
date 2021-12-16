@@ -30,6 +30,73 @@
             border-radius: 1em;
             padding: 30px;
         }
+
+        #message {
+            color: rgb(0, 0, 0, 0.3);
+        }
+
+        #messageSent {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 200px;
+            height: 100px;
+            padding: 20px;
+            margin-top: -120px;
+            margin-left: -120px;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 0px 100vw rgba(255, 255, 89, 0.2); 
+            display: none;
+        }
+        
+        #closeModal {
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 5px;
+        }
+
+        @media only screen and (max-width: 1250px) {
+            .information{
+                margin-left: 0px;
+            }
+
+            .form {
+                margin-right: 0px;
+            }
+        }
+
+        @media only screen and (max-width: 1150px) {
+            .information{
+                margin-right: 20px;
+            }
+        }
+
+        @media only screen and (max-width: 1050px) {
+            main{
+                display: block;
+            }
+
+            .information {
+                margin-top: 0px;
+            }
+
+            .form {
+                margin-top: 30px;
+            }
+        }
+
+        @media only screen and (max-width: 755px) {
+            main{
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+
+            h1 {
+                margin-left: 20px;
+            }
+        }
     </style>
 
     <script>
@@ -40,6 +107,14 @@
             else {
                 document.getElementById("navlinks").style.display = "block";
             }
+        }
+
+        function openModal(){
+            document.getElementById('messageSent').style.display = 'block';
+        }
+
+        function closeModal(){
+            document.getElementById('messageSent').style.display = 'none';
         }
     </script>
 </head>
@@ -96,7 +171,12 @@
                 <textarea id="message" rows="6" cols="50" name="message">Send your message to us or share your story and experience to the community.</textarea>
                 <br>
                 
-                <input type="submit" value="Send">
+                <button type="button" onclick="openModal();">Send</button>
+
+                <div id="messageSent">
+                    <p>Your message is sent to us! Thank you!</p>
+                    <a id='closeModal' onclick="closeModal();">x</a>
+                </div>
             </form>
         </div>
     </main>
